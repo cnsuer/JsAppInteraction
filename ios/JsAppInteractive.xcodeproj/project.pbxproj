@@ -8,19 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		18AEC2E921EF12CA0025BBF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AEC2E821EF12CA0025BBF7 /* AppDelegate.swift */; };
-		18AEC2EB21EF12CA0025BBF7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AEC2EA21EF12CA0025BBF7 /* ViewController.swift */; };
+		18AEC2EB21EF12CA0025BBF7 /* JsAppInteractiveController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AEC2EA21EF12CA0025BBF7 /* JsAppInteractiveController.swift */; };
 		18AEC2EE21EF12CA0025BBF7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18AEC2EC21EF12CA0025BBF7 /* Main.storyboard */; };
 		18AEC2F021EF12CC0025BBF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18AEC2EF21EF12CC0025BBF7 /* Assets.xcassets */; };
 		18AEC2F321EF12CC0025BBF7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18AEC2F121EF12CC0025BBF7 /* LaunchScreen.storyboard */; };
 		18AEC2FB21EF12F90025BBF7 /* JLXXWKWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AEC2FA21EF12F90025BBF7 /* JLXXWKWebViewController.swift */; };
 		18AEC30621EF17B10025BBF7 /* UrlStringFromBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AEC30521EF17B10025BBF7 /* UrlStringFromBundle.swift */; };
 		18AEC30821EF24D30025BBF7 /* web.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 18AEC30721EF24D30025BBF7 /* web.bundle */; };
+		18AEC30A21EF332A0025BBF7 /* 我在不在web文件夹下?.txt in Resources */ = {isa = PBXBuildFile; fileRef = 18AEC30921EF332A0025BBF7 /* 我在不在web文件夹下?.txt */; };
+		18AEC30C21EF36070025BBF7 /* web2.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 18AEC30B21EF36070025BBF7 /* web2.bundle */; };
+		18AEC30E21EF366D0025BBF7 /* HashPathController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AEC30D21EF366D0025BBF7 /* HashPathController.swift */; };
+		18AEC31221EF37D10025BBF7 /* DeveloperController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AEC30F21EF37D00025BBF7 /* DeveloperController.swift */; };
+		18AEC31321EF37D10025BBF7 /* EventDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AEC31021EF37D10025BBF7 /* EventDetailController.swift */; };
+		18AEC31421EF37D10025BBF7 /* ReplyDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AEC31121EF37D10025BBF7 /* ReplyDetailController.swift */; };
+		18AEC31621EF48C10025BBF7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AEC31521EF48C10025BBF7 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		18AEC2E521EF12CA0025BBF7 /* JsAppInteractive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JsAppInteractive.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18AEC2E821EF12CA0025BBF7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		18AEC2EA21EF12CA0025BBF7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		18AEC2EA21EF12CA0025BBF7 /* JsAppInteractiveController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsAppInteractiveController.swift; sourceTree = "<group>"; };
 		18AEC2ED21EF12CA0025BBF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		18AEC2EF21EF12CC0025BBF7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18AEC2F221EF12CC0025BBF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -28,6 +35,13 @@
 		18AEC2FA21EF12F90025BBF7 /* JLXXWKWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JLXXWKWebViewController.swift; sourceTree = "<group>"; };
 		18AEC30521EF17B10025BBF7 /* UrlStringFromBundle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UrlStringFromBundle.swift; sourceTree = "<group>"; };
 		18AEC30721EF24D30025BBF7 /* web.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = web.bundle; sourceTree = "<group>"; };
+		18AEC30921EF332A0025BBF7 /* 我在不在web文件夹下?.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "我在不在web文件夹下?.txt"; sourceTree = "<group>"; };
+		18AEC30B21EF36070025BBF7 /* web2.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = web2.bundle; sourceTree = "<group>"; };
+		18AEC30D21EF366D0025BBF7 /* HashPathController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashPathController.swift; sourceTree = "<group>"; };
+		18AEC30F21EF37D00025BBF7 /* DeveloperController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeveloperController.swift; sourceTree = "<group>"; };
+		18AEC31021EF37D10025BBF7 /* EventDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventDetailController.swift; sourceTree = "<group>"; };
+		18AEC31121EF37D10025BBF7 /* ReplyDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReplyDetailController.swift; sourceTree = "<group>"; };
+		18AEC31521EF48C10025BBF7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +78,12 @@
 				18AEC2FD21EF16F70025BBF7 /* Web */,
 				18AEC2FC21EF12FC0025BBF7 /* Base */,
 				18AEC2E821EF12CA0025BBF7 /* AppDelegate.swift */,
-				18AEC2EA21EF12CA0025BBF7 /* ViewController.swift */,
+				18AEC31521EF48C10025BBF7 /* ViewController.swift */,
+				18AEC2EA21EF12CA0025BBF7 /* JsAppInteractiveController.swift */,
+				18AEC30D21EF366D0025BBF7 /* HashPathController.swift */,
+				18AEC30F21EF37D00025BBF7 /* DeveloperController.swift */,
+				18AEC31021EF37D10025BBF7 /* EventDetailController.swift */,
+				18AEC31121EF37D10025BBF7 /* ReplyDetailController.swift */,
 				18AEC2EC21EF12CA0025BBF7 /* Main.storyboard */,
 				18AEC2EF21EF12CC0025BBF7 /* Assets.xcassets */,
 				18AEC2F121EF12CC0025BBF7 /* LaunchScreen.storyboard */,
@@ -85,6 +104,8 @@
 			isa = PBXGroup;
 			children = (
 				18AEC30721EF24D30025BBF7 /* web.bundle */,
+				18AEC30B21EF36070025BBF7 /* web2.bundle */,
+				18AEC30921EF332A0025BBF7 /* 我在不在web文件夹下?.txt */,
 			);
 			path = Web;
 			sourceTree = "<group>";
@@ -155,8 +176,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18AEC30A21EF332A0025BBF7 /* 我在不在web文件夹下?.txt in Resources */,
 				18AEC30821EF24D30025BBF7 /* web.bundle in Resources */,
 				18AEC2F321EF12CC0025BBF7 /* LaunchScreen.storyboard in Resources */,
+				18AEC30C21EF36070025BBF7 /* web2.bundle in Resources */,
 				18AEC2F021EF12CC0025BBF7 /* Assets.xcassets in Resources */,
 				18AEC2EE21EF12CA0025BBF7 /* Main.storyboard in Resources */,
 			);
@@ -169,10 +192,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18AEC31221EF37D10025BBF7 /* DeveloperController.swift in Sources */,
+				18AEC31421EF37D10025BBF7 /* ReplyDetailController.swift in Sources */,
 				18AEC2FB21EF12F90025BBF7 /* JLXXWKWebViewController.swift in Sources */,
-				18AEC2EB21EF12CA0025BBF7 /* ViewController.swift in Sources */,
+				18AEC31621EF48C10025BBF7 /* ViewController.swift in Sources */,
+				18AEC2EB21EF12CA0025BBF7 /* JsAppInteractiveController.swift in Sources */,
 				18AEC30621EF17B10025BBF7 /* UrlStringFromBundle.swift in Sources */,
 				18AEC2E921EF12CA0025BBF7 /* AppDelegate.swift in Sources */,
+				18AEC30E21EF366D0025BBF7 /* HashPathController.swift in Sources */,
+				18AEC31321EF37D10025BBF7 /* EventDetailController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,67 +7,34 @@
 //
 
 import UIKit
-import WebKit
 
-class ViewController: JLXXWKWebViewController {
+class ViewController: UIViewController {
 
+	@IBOutlet weak var hashPath: UITextField!
+	
 	override func viewDidLoad() {
-		super.viewDidLoad()
+        super.viewDidLoad()
 		
-		//js交互
-		scriptMessages = ["saoyisao", "sendString" ,"sendDic" ,"sendArray" ,"getValue"]
-		let messageHandler = JLXXWKWebViewScriptMessageHandler(delegate: self)
-		setUpConfiguration(webView?.configuration, scriptMessageHandler: messageHandler)
-	}
-
-	func webViewEvaluateJS(_  jsStr: String) {
-		webView?.evaluateJavaScript(jsStr) { (res, err) in
-			if err != nil {
-				print("----------evaluateJavaScriptErr Begin----------")
-				print(err ?? "err")
-				print("----------evaluateJavaScriptErr End----------")
-			}else {
-				print("success")
-			}
-		}
-	}
-
-}
-
-extension ViewController: JLXXWKWebViewScriptMessageDelegate {
+    }
 	
-	func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
+	@IBAction func jiaohu(_ sender: Any) {
 		
-		
-		print("---- userContentController didReceive message begin----")
-		print("---- message.name----")
-		print(message.name)
-		print("---- message.body----")
-		print(message.body)
-		print("----userContentController didReceive message end----")
-		
-		if message.name == "saoyisao" {
-			print("!!!!---------------!!!!")
-			print(message.name)
-			print("!!!!---------------!!!!")
-		}else if message.name == "sendDic", let dictionary = message.body as? Dictionary<String, Any>  {
-			print("!!!!---------------!!!!")
-			print(message.name)
-			print(dictionary)
-			print("!!!!---------------!!!!")
-		}else if message.name == "sendArray", let arr = message.body as? Array<Any> {
-			print("!!!!---------------!!!!")
-			print(message.name)
-			print(arr)
-			print("!!!!---------------!!!!")
-		}else if message.name == "getValue", let key = message.body as? String {
-			let res = "你的key为\(key)," +  "我是返回的数据,哈哈!"
-			let jsStr = "getvalueFromApp(\"\(res)\")"
-			webViewEvaluateJS(jsStr)
-		}
-		
+		let jsJiaohu = JsAppInteractiveController()
+		jsJiaohu.originY = .navgationNar
+		let path = urlStringFrom(bundle: "web")
+		jsJiaohu.urlString = path
+		navigationController?.pushViewController(jsJiaohu, animated: true)
 		
 	}
 	
+	@IBAction func hash(_ sender: Any) {
+		
+		let hash = HashPathController()
+		hash.originY = .navgationNar
+		let end = hashPath.text ?? "game"
+		let path = urlStringFrom(bundle: "web2", hash: end)
+		hash.urlString = path
+		navigationController?.pushViewController(hash, animated: true)
+		
+	}
 }
-

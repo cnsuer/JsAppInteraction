@@ -16,24 +16,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 		
-		createKeyWindow()
 		
 		return true
-	}
-	
-	func createKeyWindow() {
-		window = UIWindow(frame: UIScreen.main.bounds)
-		window?.backgroundColor = .white
-		window?.makeKeyAndVisible()
-		
-		let etbank = ViewController()
-		etbank.originY = .statusBar
-		let path = urlStringFrom()
-		etbank.urlString = path
-		
-		let nav = UINavigationController(rootViewController: etbank)
-		window?.rootViewController = nav
-		
 	}
 
 }

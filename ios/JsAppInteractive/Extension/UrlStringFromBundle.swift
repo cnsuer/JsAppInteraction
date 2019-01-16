@@ -15,3 +15,14 @@ func urlStringFrom(bundle named: String = "web", hash path: String = "game") -> 
 	}
 	return "http://192.168.1.48:8090" //"https://www.baidu.com"
 }
+
+func getUrlPath(hash path: String = "game") -> URL?{
+	if let bundlePath = Bundle.main.path(forResource: "web", ofType: "bundle"), let webBundle = Bundle(path: bundlePath), let indexPath = webBundle.path(forResource: "index", ofType: "html")  {
+		
+		let resource = indexPath + "#/" + path
+		let url = URL(fileURLWithPath: resource)
+
+		return url
+	}
+	return nil
+}
